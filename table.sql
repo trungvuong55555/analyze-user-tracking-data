@@ -1,9 +1,9 @@
 create table users (
     user_id int primary key,
-    name VARCHAR ( 255 ) not null,
+    name VARCHAR ( 500 ) not null,
     email VARCHAR ( 255 ) not null,
-    address VARCHAR ( 255 ) not null,
-    phone_number VARCHAR ( 20 ) not null,
+    address Text not null,
+    phone_number VARCHAR ( 50 ) not null,
     age int not null,
     weight int not null,
     high int not null

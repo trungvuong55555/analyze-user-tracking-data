@@ -1,5 +1,6 @@
 import random
 import datetime
+from datetime import timedelta
 
 
 def write_list_file(file_name, lists):
@@ -14,5 +15,12 @@ def random_date(start, end):
     )
 
 
+def random_date(start, end):
+    delta = end - start
+    int_delta = (delta.days * 24 * 60 * 60) + delta.seconds
+    random_second = random.randrange(int_delta)
+    return start + timedelta(seconds=random_second)
+
+
 def random_milliseconds(start, end):
-    return random.randint(0, int((end - start).total_seconds() * 1000))
+    return int(random_date(start, end).timestamp() * 1000)

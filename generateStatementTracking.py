@@ -6,8 +6,8 @@ import argparse
 parser = argparse.ArgumentParser(description="generate tracking data")
 parser.add_argument('-f', "--file", type=str, help="name file")
 parser.add_argument('-n', "--number", type=int, help="number insert to file")
-parser.add_argument('-s', "--start_date", type=str, help="start date format %d-%m-%Y")
-parser.add_argument('-e', "--end_date", type=str, help="end date format %d-%m-%Y")
+parser.add_argument('-s', "--start_date", type=str, help="start date format %d/%m/%Y %H:%M:%S")
+parser.add_argument('-e', "--end_date", type=str, help="end date format %d/%m/%Y %H:%M:%S")
 
 args = parser.parse_args()
 sql_file = args.file
@@ -15,8 +15,8 @@ number = args.number
 start_date_str = args.start_date
 end_date_str = args.end_date
 
-start_date = datetime.strptime(start_date_str, "%d-%m-%Y").date()
-end_date = datetime.strptime(end_date_str, "%d-%m-%Y").date()
+start_date = datetime.strptime(start_date_str, "%d/%m/%Y %H:%M:%S")
+end_date = datetime.strptime(end_date_str, "%d/%m/%Y %H:%M:%S")
 
 list_tracking = []
 

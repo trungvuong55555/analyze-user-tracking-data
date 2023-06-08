@@ -1,0 +1,26 @@
+Câu 1 viết function tính khoảng cách giữa hai điểm
+Input x1: int, y1: int, x2: int, y2: int
+Output: float
+
+Câu 2 Tìm câu lệnh extract dạng Unix - Timestamp sang định dạng miliseconds
+
+Câu 3 Viết fucntion tính tổng số lưọt xuất hiện của user_id trong một khoảng thời gian
+Input userId: int, start_timestamp: Timestamp, end_timestamp: Timestamp
+Output: Int
+
+Câu 4 Viết fucntion trả về table 
+Input x: int, y: int, R: float, stat_timestamp: Timestamp, end_timestamp
+Output: Table (name: varchar(500), age: int, lat: int, lon: int, distance: float ,milisecond: bigint)
+Trong đó: distance khoảng cách từ điểm di chuyển tới tâm tọa độ bán kính
+
+
+Câu 5: Viết function tính tổng khoảng cách của một người di chuyển trong một khoảng thời gian
+Input userId: int, start_timestamp: Timestamp, end_timestamp: Timestamp
+Ouput: float
+
+Câu 6: Viết fucntion nếu tổng khoảng cách của một người lớn hơn 1000 trả về kết quả "close distance" ngược lại "long distance"
+Input userId: int, start_timestamp: Timestamp, end_timestamp: Timestamp
+output: float
+
+
+
