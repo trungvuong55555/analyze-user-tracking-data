@@ -1,14 +1,14 @@
-Câu 1 viết function tính khoảng cách giữa hai điểm
+Câu 1: viết function tính khoảng cách giữa hai điểm
 Input x1: int, y1: int, x2: int, y2: int
 Output: float
 
-Câu 2 Tìm câu lệnh extract dạng Unix - Timestamp sang định dạng miliseconds
+Câu 2: Tìm câu lệnh extract dạng Unix - Timestamp sang định dạng miliseconds
 
-Câu 3 Viết fucntion tính tổng số lưọt xuất hiện của user_id trong một khoảng thời gian
+Câu 3: Viết fucntion tính tổng số lưọt xuất hiện của user_id trong một khoảng thời gian
 Input userId: int, start_timestamp: Timestamp, end_timestamp: Timestamp
 Output: Int
 
-Câu 4 Viết fucntion trả về table 
+Câu 4: Viết fucntion trả về table 
 Input x: int, y: int, R: float, stat_timestamp: Timestamp, end_timestamp
 Output: Table (name: varchar(500), age: int, lat: int, lon: int, distance: float ,milisecond: bigint)
 Trong đó: distance khoảng cách từ điểm di chuyển tới tâm tọa độ bán kính
@@ -22,5 +22,30 @@ Câu 6: Viết fucntion nếu tổng khoảng cách của một người lớn h
 Input userId: int, start_timestamp: Timestamp, end_timestamp: Timestamp
 output: float
 
+Câu 7: viết function trả về ngày (định dạng yyyyMMdd) từ milisecond (timezone +7) 
+Input: bigint, milisecond
+Output: int
 
+Câu 8: Viết function trả về giờ từ milisecond (timezone +7)
+Input: bigint, milisecond
+Output: int
 
+Câu 9: Viết function trả về table, thống kê mật độ trong phạm vi bán kính R theo từng khung h 
+Input xR: int, yR: int, R: float, part_date: int
+Output: Table (part_hour: int, density: bigint)
+
+Câu 10: Viết fuction bóc tách tên viết tắt địa chỉ các tiểu bang thành tên gốc (có file map đính kèm)
+VD "50208 James LoopAnnettemouth, NM 76511" => lấy ra "NM" => map ra thông tin "New Mexico"
+Input: user_address: text
+Ouput: varchar(100)
+
+Câu 11: Viết fucntion thống kê từng tiểu bang có số lượt users di chuyển trong phạm vi bán kính R theo khung giờ với ngày truyền vào 
+Input xR: int, yR: int, R: float, part_day: int
+Output: Table (part_date: int, part_hour: int, state: varchar(100), appear: bigint)
+Trong đó:
+state: là tên đầy đủ của tiểu bang
+Appear: là số lần users xuất hiện trong phạm vi đó
+
+Câu 12: Thống kê tổng quãng đường di chuyển của các user trong một khoảng thời gian
+Input: start_timestamp: Timestamp, end_timestamp: Timestamp
+Ouput: Table(user_id int, user_name varchar(500), age: int, weight: int, high: int, sum_distance: float)
