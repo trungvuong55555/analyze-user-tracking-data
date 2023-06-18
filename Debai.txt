@@ -1,3 +1,5 @@
+============================SQL================================
+
 Câu 1: viết function tính khoảng cách giữa hai điểm
 Input x1: int, y1: int, x2: int, y2: int
 Output: float
@@ -49,3 +51,8 @@ Appear: là số lần users xuất hiện trong phạm vi đó
 Câu 12: Thống kê tổng quãng đường di chuyển của các user trong một khoảng thời gian
 Input: start_timestamp: Timestamp, end_timestamp: Timestamp
 Ouput: Table(user_id int, user_name varchar(500), age: int, weight: int, high: int, sum_distance: float)
+
+----------------------------------------------------------------------------------------------
+
+=================Python===================
+
