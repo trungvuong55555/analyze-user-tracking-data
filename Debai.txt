@@ -56,3 +56,16 @@ Ouput: Table(user_id int, user_name varchar(500), age: int, weight: int, high: i
 
 =================Python===================
 
+Yêu cầu tất cả các câu có chú thích rõ ràng (label, labelX, labelY,..)
+
+
+Câu 1: vẽ 3D của câu 4 SQl với 3 chiều lat, lon, hour (chuyển đôi từ miliseconds sang giờ - câu 8 SQL)
+Thời gian giới han câu 4 chỉ ở trong 1 ngày ví dụ tư '2023-06-07 10:40:28' tới '2023-06-07 20:40:28'
+
+Câu 2: Vẽ line chart của câu 9 Sql
+
+Câu 3: Vẽ lines chart cho 4 tiểu bang California, New York, Texas, Washington.
+Với mỗi line là của một tiểu bang của câu 11 sql
+
+Câu 4: Hãy vẽ biểu đồ scatterplot matrix để thể hiện sự tương quan giữa các trường: age, high, weight, sum_distance
+của câu 12 sql
